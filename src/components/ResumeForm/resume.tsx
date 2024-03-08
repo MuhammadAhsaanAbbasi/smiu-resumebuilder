@@ -12,12 +12,14 @@ const ResumePreview = () => {
     }
     return (
         <div>
-            <Document file="somefile.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
-            </Document>
-            <p>
-                Page {pageNumber} of {numPages}
-            </p>
+            <div>
+                <Document
+                    file="resume.pdf"
+                    onLoadSuccess={onDocumentLoadSuccess}
+                >
+                    <Page pageNumber={pageNumber} />
+                </Document>
+            </div>
         </div>
     )
 }
