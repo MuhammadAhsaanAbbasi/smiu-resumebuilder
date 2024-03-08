@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroButton from './heroButton'
 import young from "../../../public/assets/young.png"
+
 const Hero = () => {
     return (
         <section className={"relative overflow-hidden flex justify-center sm:m-0"}>
